@@ -1,0 +1,11 @@
+
+0.74 SVM 5-fold F1-score with a standard deviation of 0.01
+NB f1-score on validation set ->  0.5215304385145113
+SVM Accuracy Score on Val ->  76.28657921291625
+SVM f1-score on validation set ->  0.7315093512780997
+LR Accuracy Score on Val ->  77.09384460141273
+LR f1-score on validation set -> 0.7521773696525107
+SVM f1-score on test set ->  0.6216234911245575
+LR f1-score on test set ->  0.6502174803487488
+NB f1-score on test set ->  0.41946974522176284
+Ensemble f1-score on test set ->  0.604063981042654

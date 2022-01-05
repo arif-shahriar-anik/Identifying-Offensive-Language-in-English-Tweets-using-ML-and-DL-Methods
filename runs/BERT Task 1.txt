@@ -1,0 +1,42 @@
+Model: "model_1"
+__________________________________________________________________________________________________
+ Layer (type)                   Output Shape         Param #     Connected to                     
+==================================================================================================
+ input_word_ids (InputLayer)    [(None, 250)]        0           []                               
+                                                                                                  
+ input_mask (InputLayer)        [(None, 250)]        0           []                               
+                                                                                                  
+ segment_ids (InputLayer)       [(None, 250)]        0           []                               
+                                                                                                  
+ keras_layer_1 (KerasLayer)     [(None, 768),        109482241   ['input_word_ids[0][0]',         
+                                 (None, 250, 768)]                'input_mask[0][0]',             
+                                                                  'segment_ids[0][0]']            
+                                                                                                  
+ tf.__operators__.getitem_1 (Sl  (None, 768)         0           ['keras_layer_1[0][1]']          
+ icingOpLambda)                                                                                   
+                                                                                                  
+ dense_3 (Dense)                (None, 64)           49216       ['tf.__operators__.getitem_1[0][0
+                                                                 ]']                              
+                                                                                                  
+ dropout_2 (Dropout)            (None, 64)           0           ['dense_3[0][0]']                
+                                                                                                  
+ dense_4 (Dense)                (None, 32)           2080        ['dropout_2[0][0]']              
+                                                                                                  
+ dropout_3 (Dropout)            (None, 32)           0           ['dense_4[0][0]']                
+                                                                                                  
+ dense_5 (Dense)                (None, 2)            66          ['dropout_3[0][0]']              
+                                                                                                  
+==================================================================================================
+Total params: 109,533,603
+Trainable params: 109,533,602
+Non-trainable params: 1
+
+245/245 [==============================] - ETA: 0s - loss: 0.2848 - accuracy: 0.8966 
+
+Evaluate on test data
+31/31 [==============================] - 998s 32s/step - loss: 0.1686 - accuracy: 0.9246
+test loss, test acc: [0.16864199936389923, 0.924620509147644]
+
+122/122 [==============================] - 984s 8s/step
+
+0.9092428109880738

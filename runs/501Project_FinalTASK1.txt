@@ -1,0 +1,8 @@
+
+0.85 SVM 5-fold F1-score with a standard deviation of 0.02
+NB macro f1-score on validation set ->  0.6063023855577048
+SVM macro f1-score on validation set->  0.8411212497022759
+LR macro f1-score on validation set ->  0.8580716663029245
+SVM macro f1-score on test set ->  0.8783898602582974
+NB macro f1-score on test set ->  0.6853403896310876
+LR macro f1-score on test set ->  0.8819846791346626
